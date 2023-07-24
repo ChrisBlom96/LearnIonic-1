@@ -1,0 +1,63 @@
+<ion-content class="ion-padding content ion-no-border" color="light">
+
+<ion-icon class="logo" name="logo-ionic" size="large" color="primary"></ion-icon>
+
+  <ion-grid style="margin-top: 150px">
+    <ion-row justify-content-center>  
+
+                <ion-card class="ion-padding card ion-no-border" color="primary">
+                  <ion-header class="header">
+                    <ion-toolbar color="grey">
+                       <ion-title class="ion-text-wrap ion-text-center" color="dark"><p style="color:#000">Login to <b> MUNCH-E's </b></p></ion-title>
+                    </ion-toolbar>
+                  </ion-header>
+                  <!-- Username Item -->
+                  <ion-item color="dark">
+                    <ion-input
+                      label="Username"
+                      labelPlacement="stacked"
+                      [clearInput]="true"
+                      placeholder="Enter Username"
+                    >
+                    </ion-input>
+                  </ion-item>
+
+
+                  <!-- Password item -->
+                  <ion-item color="dark">
+                    <ion-input
+                      label="Password"
+                      labelPlacement="stacked"
+                      [clearInput]="true"
+                      placeholder="Enter Password"
+                    >
+                    </ion-input></ion-item>
+                  
+                    <ion-item color="dark">
+                      <ion-toggle class="text" [enableOnOffLabels]="true">Keep this device logged in</ion-toggle>
+                    </ion-item>
+
+                    <ion-item color="dark">
+                      <ion-button color="success" class="btn"><p style="color:#000">Log In</p></ion-button>
+                    </ion-item>          
+                  </ion-card>
+                    
+                  
+                  <!-- These are the non subscribed or forgotten password -->
+                    <ion-col>
+                      <ion-text class="text ion-text-center">
+                        <p>Forgot your password <a href="SignUp"><br>Reset Password</a></p>
+                      </ion-text>
+                    </ion-col>
+                    <ion-col>
+                      <ion-text class="text ion-text-center">
+                        <p>Not a member yet <a href="SignUp">Sign Up</a></p>
+                      </ion-text>
+                    </ion-col>
+  
+         
+                
+
+      </ion-row>
+    </ion-grid>
+</ion-content>
