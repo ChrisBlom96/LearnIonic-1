@@ -4,7 +4,8 @@
     padding: 15px;
     display: inline-flex;
     align-items: center;
-    width: 400px;
+    max-width: 800px;
+    min-width: 400px;
 }
 
 .text{
@@ -29,4 +30,8 @@
     width: 80px;
     display: inline-flex;
     margin: 10px auto;
+}
+
+.background-image{
+    --background: url(https://www.shutterstock.com/shutterstock/photos/1479016076/display_1500/stock-vector-burger-and-fries-seamless-pattern-background-vector-design-1479016076.jpg) 0 0/100% 100% no-repeat;
 }
