@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { addIcons } from 'ionicons';
+import { NavController } from '@ionic/angular';
+
 
 
 @Component({
@@ -9,7 +11,16 @@ import { addIcons } from 'ionicons';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  constructor( private nav: NavController ) { }
+
+  navigateTo(page: string) {
+		this.nav.navigateForward(page);
+    this.navigateTo('/dashboard.page.html')
+	}
+	​
+	navigateBack(page: string) {
+		this.nav.navigateBack(page);
+	}
 
   ngOnInit() {
   }
