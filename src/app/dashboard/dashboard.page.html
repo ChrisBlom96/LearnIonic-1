@@ -5,9 +5,20 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Dashboard</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-tabs color="dark">
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="Home">
+        <ion-icon name="Home"></ion-icon>
+        Dashboard
+      </ion-tab-button>
+      <ion-tab-button tab="Search">
+        <ion-icon name="Search"></ion-icon>
+        Search
+      </ion-tab-button>
+      <ion-tab-button tab="Person">
+        <ion-icon name="Person"></ion-icon>
+        Profile
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
